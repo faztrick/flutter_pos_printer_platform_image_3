@@ -101,7 +101,7 @@ class _MyAppState extends State<MyApp> {
     devices.clear();
     _subscription = printerManager.discovery(type: defaultPrinterType, isBle: _isBle).listen((device) {
       devices.add(BluetoothPrinter(
-        deviceName: device?.name??"",
+        deviceName: device.name,
         address: device.address,
         isBle: _isBle,
         vendorId: device.vendorId,
