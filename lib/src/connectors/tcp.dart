@@ -9,7 +9,6 @@ import 'package:ping_discover_network_forked/ping_discover_network_forked.dart';
 
 import '../../discovery.dart';
 import '../../flutter_pos_printer_platform_image_3.dart';
-import '../../printer.dart';
 
 class TcpPrinterInput extends BasePrinterInput {
   final String ipAddress;
